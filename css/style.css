@@ -308,6 +308,24 @@ Commom elements
 .icon-tech svg:nth-child(3):hover > rect{
 	fill:#390000;
 }
+.icon-tech svg:nth-child(7):hover > rect{
+	fill:#FC490B;
+}
+.icon-tech svg:nth-child(7):hover path {
+    fill: white;
+}
+.icon-tech svg:nth-child(8):hover > rect{
+	fill:#2196F3;
+}
+.icon-tech svg:nth-child(8):hover path {
+    fill: white;
+}
+.icon-tech svg:nth-child(9):hover > rect{
+	fill:white;
+}
+.icon-tech svg:nth-child(9):hover path {
+    fill: black;
+}
 
 .icon-tech svg:nth-child(6):hover g > path:first-child{
 	fill:#00005B;
@@ -540,8 +558,8 @@ Main Site warp
 }
 
 .main-site-warp.push-side .site-content-warp {
-	-webkit-transform: translateX(614px);
-	transform: translateX(614px);
+	-webkit-transform: translateX(512px);
+	transform: translateX(512px);
 }
 
 .main-site-warp.push-side .site-menu-warp {
@@ -570,7 +588,7 @@ body.push-side #ascrail2000-hr {
 	flex-direction: column;
 	justify-content: space-between;
 	position: fixed;
-	width: 614px;
+	width: 512px;
 	height: 100%;
 	left: -620px;
 	top: 0;
@@ -795,13 +813,24 @@ body.push-side #ascrail2000-hr {
 .owl-nav {
 	display: none;
 }
-
 .copyright {
+    font-size: 13px;
+    color: rgba(130, 130, 130, 0.29);
+    position: fixed;
+    height: 80px;
+    width: 614px;
+    left: 0;
+    bottom: 0;
+    padding-left: 120px;
+    padding-top: 20px;
+}
+
+/* .copyright {
 	font-size: 12px;
 	color: white;
 	left: 0;
 	bottom: 0;
-	/* padding-top: 20px; */
+	
 }
 
 .copyright a {
@@ -811,7 +840,7 @@ body.push-side #ascrail2000-hr {
 
 .copyright i {
 	color: rgba(204, 17, 17, 0.29);
-}
+} */
 
 /*------------------
 Hero section
@@ -1248,13 +1277,15 @@ Responsive
 
 	.main-sidebar,
 	.copyright {
-		width: 450px;
+		position: relative;
+		padding: 16px;
+		text-align: center;
+		width: 100%;
+		height: auto;
 	}
-
-	.copyright {
-		padding-left: 30px;
-	}
-
+	.copyright p {
+        margin: 0;
+    }
 	.site-content-warp {
 		padding-left: 450px;
 	}
@@ -1284,12 +1315,15 @@ Responsive
 
 	.main-sidebar,
 	.copyright {
-		width: 350px;
+		position: relative;
+		padding: 16px;
+		text-align: center;
+		width: 100%;
+		height: auto;
 	}
-
-	.copyright {
-		padding-left: 30px;
-	}
+	.copyright p {
+        margin: 0;
+    }
 
 	.site-logo h2 {
 		font-size: 70px;
@@ -1391,13 +1425,14 @@ Responsive
 
 	.copyright {
 		position: relative;
-		left: 0;
-		bottom: 0;
-		padding: 60px 15px 50px;
+		padding: 16px;
 		text-align: center;
 		width: 100%;
+		height: auto;
 	}
-
+	.copyright p {
+        margin: 0;
+    }
 	.nicescroll-rails.nicescroll-rails-hr,
 	#ascrail2000-hr {
 		max-width: calc(100% - 50px);
@@ -1464,7 +1499,6 @@ Responsive
 	}
 
 	.main-sidebar .mb-warp {
-		gap: 24px;
 		padding: 40px 20px;
 		max-width: 420px;
 		margin: 0 auto;
@@ -1511,12 +1545,16 @@ Responsive
 		max-width: -webkit-fill-available;
 		padding: 0 0 0 0;
 	}
-	/* .copyright {
+	.copyright {
 		position: relative;
-		left: 0;
-		bottom: 0;
+		padding: 16px;
+		text-align: center;
 		width: 100%;
-	} */
+		height: auto;
+	}
+	.copyright p {
+        margin: 0;
+    }
 	.nicescroll-rails.nicescroll-rails-hr,
 	#ascrail2000-hr {
 		max-width: calc(100% - 50px);
@@ -1568,12 +1606,19 @@ Responsive
 	/* .header-social {
 		display: none;
 	} */
+	
+    .copyright {
+		position: relative;
+		padding: 16px;
+		text-align: center;
+		width: 100%;
+		height: auto;
+	}
 	.copyright p {
-		margin-bottom: 0;
-	}
-	.copyright{
-		
-	}
+        margin: 0;
+    }
+	
+
 	.about-info {
 		margin-bottom: 0;
 	}
