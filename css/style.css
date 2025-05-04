@@ -60,8 +60,14 @@ h5 {
 h6 {
 	font-size: 16px;
 }
-
+.element h4 {
+	margin-bottom: 24px;
+	color: var(--textbody);
+  }
+  
+  
 p {
+	margin-bottom: 0px;
 	font-size: px;
 	/* line-height: 2; */
 	color: #b8b8b8;
@@ -156,6 +162,7 @@ Commom elements
 /* buttons */
 
 .site-btn {
+	margin-right: 24px;
 	display: inline-flex;
 	font-size: 14px;
 	font-weight: 700;
@@ -500,7 +507,6 @@ Commom elements
 /* Icons box  */
 
 .icon-box {
-    margin-bottom: 30px;
     border: 1px solid #212121;
     height: max-content;
     padding: 24PX;
@@ -797,7 +803,16 @@ body.push-side #ascrail2000-hr {
 	top: -5px;
 	background-image:url("../img/icons/share.svg");
 } */
-
+.icon-box a {
+	color: var(--accent); /* or any color you want */
+	text-decoration: none;
+  }
+  
+  .icon-box a:hover {
+	
+	text-decoration: underline;
+  }
+  
 .contact-info li {
     display: flex;
     font-size: 16px;
