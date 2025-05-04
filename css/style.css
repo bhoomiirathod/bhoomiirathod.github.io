@@ -1035,7 +1035,7 @@ Blog page
 }
 
 .blog-thumb {
-	height: 700px;
+	height: 512px;
 }
 
 .hs-info1 {
@@ -1091,8 +1091,8 @@ Blog page
 }
 
 .blog-metas {
-	padding-top: 15px;
-	margin-bottom: 30px;
+	padding-top: 6px;
+	margin-bottom: 16px;
 }
 
 .blog-metas .blog-meta {
