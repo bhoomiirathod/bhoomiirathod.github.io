@@ -1042,8 +1042,8 @@ Blog page
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 300px;
-	padding: 16px 24px;
+	width: 260px;
+	padding: 12px;
 	color: white;
 	background: linear-gradient(309deg, rgba(128, 128, 128, 0.527) 0%, rgba(120, 120, 120, 1) 24%, rgba(150, 150, 150, 1) 50%, rgba(140, 140, 140, 1) 72%, rgba(128, 128, 128, 1) 100%);
 }
