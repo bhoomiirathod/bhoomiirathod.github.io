@@ -1437,7 +1437,7 @@ Responsive
 
 	.main-sidebar {
 		position: relative;
-		width: 100%;
+		/* width: 100%; */
 		height: auto;
 	}
 
@@ -1537,13 +1537,13 @@ Responsive
 
 	.main-sidebar {
 		position: relative;
-		width: 100%;
+		/* width: 100%; */
 		height: auto;
 	}
 
 	.main-sidebar .mb-warp {
-		padding: 40px 20px;
-		max-width: 420px;
+		padding: 40px 40px 20px 0;
+		/* max-width: 560px; */
 		margin: 0 auto;
 	}
 
@@ -1664,7 +1664,7 @@ Responsive
 
 	.about-info {
 		margin-bottom: 0;
-		padding: 0 20px 72px 20px;
+		padding: 72px 30px 72px 30px;
 	}
 
 	.site-menu li a {
