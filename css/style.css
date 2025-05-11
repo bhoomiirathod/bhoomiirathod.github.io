@@ -136,6 +136,31 @@ Helper CSS
 Commom elements
  -----------------------*/
 
+
+ /* Hide logo and header-social on devices smaller than 992px (tablet and below) */
+@media (max-width: 991.98px) {
+	.logo {
+	  display: none !important;
+	}
+  
+	.header-social {
+	  display: none !important;
+	}
+  
+	.nav-switch {
+	  display: block !important;
+	}
+  }
+  
+  /* Optionally hide nav-switch on desktop */
+  @media (min-width: 992px) {
+	.nav-switch {
+	  display: none !important;
+	}
+  }
+  
+  
+
 .elements-section {
 	padding: 16px 30px 0 30px;
 	height: 100%;
@@ -662,33 +687,35 @@ body.push-side #ascrail2000-hr {
 
 /* Header section */
 
-.header-section {
-	position: absolute;
-	width: 100%;
-	top: 0;
-	left: 0;
-	overflow: hidden;
-	padding: 0 120px;
-	z-index: 999;
-	background: #000;
-	-webkit-transform: translateX(0);
-	transform: translateX(0);
-	-webkit-transition: all 0.4s;
-	transition: all 0.4s;
-}
 
+.header-section {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    padding: 0 70px;
+    z-index: 999;
+    background: var(--secondry);
+    transform: translateX(0);
+    transition: all 0.4s;
+    flex-wrap: nowrap;
+    align-items: center;
+}
 .nav-switch {
 	float: left;
+	margin: 42px 0;
 	font-size: 28px;
-	color: #ffffff;
+	color: #4e4e4e;
 	line-height: 0;
 	cursor: pointer;
 	opacity: 1;
 	-webkit-transition: all 0.4s;
 	transition: all 0.4s;
-	padding: 32px 0 0 0;
-
 }
+
 
 .header-social {
 	float: right;
@@ -696,11 +723,13 @@ body.push-side #ascrail2000-hr {
 
 .header-social a {
 	display: inline-block;
-	color: #000000;
+	color: var(--textlight);
 	font-size: 18px;
-	padding: 32px;
-	background-color: var(--accent);
+	margin-right: 30px;
+	padding: 5px;
 }
+
+
 
 .site-content-warp {
 	position: relative;
@@ -726,9 +755,7 @@ body.push-side #ascrail2000-hr {
 
 
 .main-sidebar .mb-warp {
-	padding: 200px 120px 24px 120px;
-
-
+    padding: 150px 120px 60px 70px;
 }
 
 .site-logo {
@@ -836,7 +863,7 @@ body.push-side #ascrail2000-hr {
     width: 614px;
     left: 0;
     bottom: 0;
-    padding-left: 120px;
+    padding-left: 70px;
     padding-top: 20px;
 }
 
@@ -1646,7 +1673,7 @@ Responsive
 		max-width: -webkit-fill-available;
 		padding: 0 0 0 0;
 	}
-	/* .main-sidebar .mb-warp{
+	/* .main-sidebar .757{
 		padding: 40px 20px 24px 20px;
 	} */
 	.about-info h3 {
